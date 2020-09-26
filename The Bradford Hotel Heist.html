@@ -28,10 +28,10 @@ There&#39;s something written on the [[wall behind you-&gt;Lobby Wall]].</tw-pas
 &lt;span style=&quot;color:green&quot;&gt;B&lt;/span&gt;A&lt;span style=&quot;color:green&quot;&gt;D&lt;/span&gt;G&lt;span style=&quot;color:green&quot;&gt;E&lt;/span&gt;
 
 [[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="5" name="Concierge" tags="" position="300,1100" size="100,100">Double-click this passage to edit it.
-[[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="6" name="Game Room" tags="" position="500,1100" size="100,100">Double-click this passage to edit it.
+[[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="6" name="Game Room" tags="" position="500,1100" size="100,100">That wall sure does [[look suspicious-&gt;Secret Wall]].
 [[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="7" name="Freight Room" tags="" position="700,1100" size="100,100">Double-click this passage to edit it.
 [[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="8" name="Clerk&#39;s Office" tags="" position="900,1100" size="100,100">Double-click this passage to edit it.
-[[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="9" name="Safe Room" tags="" position="1100,1100" size="100,100">The safe sits here, a lump of cold and heartless iron. Your destiny awaits inside.
+[[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="9" name="Safe Room" tags="" position="1100,1100" size="100,100">(if: $codeFound is true)[The window is swinging open and there&#39;s a concerning lack of any safes. It looks like the safe has been [[dragged away-&gt;Pursuit]]](else:)[The safe sits here, a lump of cold and heartless iron. Your destiny awaits inside. You have no idea what the code is.]
 
 [[Back to Lobby-&gt;Lobby]]</tw-passagedata><tw-passagedata pid="10" name="Notes" tags="" position="1400,800" size="100,100">Thelma Payne
 5 animals - rabbit monkey giraffe horse coyote
@@ -39,7 +39,148 @@ There&#39;s something written on the [[wall behind you-&gt;Lobby Wall]].</tw-pas
 BADGE on wall above entrance door - 1, 3, 5 letters in green
 sudoku found on the corpse of a stuffed coyote mounted to secret wall in games room has safe combo
 twist leading to hidden wall was that hotel concierge is his own grandfather
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="11" name="Secret Wall" tags="" position="500,1300" size="100,100">The wall rotates on its axis, revealing a new face. The corpse of a [[stuffed coyote-&gt;Stuffed Coyote]] is mounted on a wooden plate.
+
+[[Back to the Game Room-&gt;Game Room]]</tw-passagedata><tw-passagedata pid="12" name="Stuffed Coyote" tags="" position="500,1500" size="100,100">Examining the dead dog, you find a sudoku puzzle, on a page entitled &quot;Safe Code&quot;. 6 of the squares are highlighted.
+
+Sorry this transcription of the sudoku sucks. It&#39;s hard to get a sudoku embedded in this in any kind of sensible way. The &quot;!&quot;s are the highlighted target boxes and &quot;#&quot;s are empty.
+
+&lt;span style=&quot;font-family:&#39;Lucida Console&#39;, monospace&quot;&gt;&#96;
+#!#|26#|7#1
+68#|!7#|#9#
+19#|##4|5##
+-----------
+82!|1##|#4#
+##4|6#2|9##
+#5#|##3|!28
+-----------
+##9|3##|#74
+!4#|#5#|#36
+7#3|#18|#!#
+&#96;
+&lt;/span&gt;
+
+[[Back to Game Room-&gt;Game Room]]
+(set: $codeFound to true)
+</tw-passagedata><tw-passagedata pid="13" name="Pursuit" tags="" position="1100,1300" size="100,100">Following the drag marks down the street, you eventually come across your hated rival George Washingham. He appears to be napping under a tree, while the safe lies across the train tracks. You guess he&#39;s trying to use the train to break open the safe, but that plan seems like it&#39;s going to be highly destructive to both safe and train.
+
+[[Sneak up-&gt;At Safe]]</tw-passagedata><tw-passagedata pid="14" name="At Safe" tags="" position="1100,1500" size="100,100">You succesfully sneak up to the safe without waking George. You start to dial in the code.
+
+(You did solve the sudoku, write down, and remember the code right? Well, you can probably [[recall it-&gt;Sudoku one mo gain]])
+
+[[1-&gt;D2Wrong]]
+[[2-&gt;D2Wrong]]
+[[3-&gt;D2Right]]
+[[4-&gt;D2Wrong]]
+[[5-&gt;D2Wrong]]
+[[6-&gt;D2Wrong]]
+[[7-&gt;D2Wrong]]
+[[8-&gt;D2Wrong]]
+[[9-&gt;D2Wrong]]
+</tw-passagedata><tw-passagedata pid="15" name="D2Wrong" tags="" position="1000,1700" size="100,100">[[1-&gt;D3Wrong]]
+[[2-&gt;D3Wrong]]
+[[3-&gt;D3Wrong]]
+[[4-&gt;D3Wrong]]
+[[5-&gt;D3Wrong]]
+[[6-&gt;D3Wrong]]
+[[7-&gt;D3Wrong]]
+[[8-&gt;D3Wrong]]
+[[9-&gt;D3Wrong]]</tw-passagedata><tw-passagedata pid="16" name="D2Right" tags="" position="1200,1700" size="100,100">[[1-&gt;D3Wrong]]
+[[2-&gt;D3Wrong]]
+[[3-&gt;D3Wrong]]
+[[4-&gt;D3Wrong]]
+[[5-&gt;D3Right]]
+[[6-&gt;D3Wrong]]
+[[7-&gt;D3Wrong]]
+[[8-&gt;D3Wrong]]
+[[9-&gt;D3Wrong]]</tw-passagedata><tw-passagedata pid="17" name="D3Wrong" tags="" position="1000,1900" size="100,100">[[1-&gt;D4Wrong]]
+[[2-&gt;D4Wrong]]
+[[3-&gt;D4Wrong]]
+[[4-&gt;D4Wrong]]
+[[5-&gt;D4Wrong]]
+[[6-&gt;D4Wrong]]
+[[7-&gt;D4Wrong]]
+[[8-&gt;D4Wrong]]
+[[9-&gt;D4Wrong]]</tw-passagedata><tw-passagedata pid="18" name="D4Wrong" tags="" position="1000,2100" size="100,100">[[1-&gt;D5Wrong]]
+[[2-&gt;D5Wrong]]
+[[3-&gt;D5Wrong]]
+[[4-&gt;D5Wrong]]
+[[5-&gt;D5Wrong]]
+[[6-&gt;D5Wrong]]
+[[7-&gt;D5Wrong]]
+[[8-&gt;D5Wrong]]
+[[9-&gt;D5Wrong]]</tw-passagedata><tw-passagedata pid="19" name="D5Wrong" tags="" position="1000,2300" size="100,100">[[1-&gt;D6Wrong]]
+[[2-&gt;D6Wrong]]
+[[3-&gt;D6Wrong]]
+[[4-&gt;D6Wrong]]
+[[5-&gt;D6Wrong]]
+[[6-&gt;D6Wrong]]
+[[7-&gt;D6Wrong]]
+[[8-&gt;D6Wrong]]
+[[9-&gt;D6Wrong]]</tw-passagedata><tw-passagedata pid="20" name="Sudoku one mo gain" tags="" position="900,1500" size="100,100">&lt;span style=&quot;font-family:&#39;Lucida Console&#39;, monospace&quot;&gt;&#96;
+#!#|26#|7#1
+68#|!7#|#9#
+19#|##4|5##
+-----------
+82!|1##|#4#
+##4|6#2|9##
+#5#|##3|!28
+-----------
+##9|3##|#74
+!4#|#5#|#36
+7#3|#18|#!#
+&#96;
+&lt;/span&gt;
+
+[[Done-&gt;At Safe]]</tw-passagedata><tw-passagedata pid="21" name="D6Wrong" tags="" position="1000,2500" size="100,100">[[1-&gt;Retry Safe]]
+[[2-&gt;Retry Safe]]
+[[3-&gt;Retry Safe]]
+[[4-&gt;Retry Safe]]
+[[5-&gt;Retry Safe]]
+[[6-&gt;Retry Safe]]
+[[7-&gt;Retry Safe]]
+[[8-&gt;Retry Safe]]
+[[9-&gt;Retry Safe]]</tw-passagedata><tw-passagedata pid="22" name="Retry Safe" tags="" position="1300,1500" size="100,100">The combination lock clunks, and resets. You must have messed up the code.
+
+[[Try Again-&gt;At Safe]]</tw-passagedata><tw-passagedata pid="23" name="D3Right" tags="" position="1200,1900" size="100,100">[[1-&gt;D4Wrong]]
+[[2-&gt;D4Wrong]]
+[[3-&gt;D4Wrong]]
+[[4-&gt;D4Wrong]]
+[[5-&gt;D4Wrong]]
+[[6-&gt;D4Right]]
+[[7-&gt;D4Wrong]]
+[[8-&gt;D4Wrong]]
+[[9-&gt;D4Wrong]]</tw-passagedata><tw-passagedata pid="24" name="D4Right" tags="" position="1200,2100" size="100,100">[[1-&gt;D5Wrong]]
+[[2-&gt;D5Wrong]]
+[[3-&gt;D5Wrong]]
+[[4-&gt;D5Wrong]]
+[[5-&gt;D5Wrong]]
+[[6-&gt;D5Right]]
+[[7-&gt;D5Wrong]]
+[[8-&gt;D5Wrong]]
+[[9-&gt;D5Wrong]]</tw-passagedata><tw-passagedata pid="25" name="D5Right" tags="" position="1200,2300" size="100,100">[[1-&gt;D6Wrong]]
+[[2-&gt;D6Right]]
+[[3-&gt;D6Wrong]]
+[[4-&gt;D6Wrong]]
+[[5-&gt;D6Wrong]]
+[[6-&gt;D6Wrong]]
+[[7-&gt;D6Wrong]]
+[[8-&gt;D6Wrong]]
+[[9-&gt;D6Wrong]]</tw-passagedata><tw-passagedata pid="26" name="D6Right" tags="" position="1200,2500" size="100,100">[[1-&gt;Retry Safe]]
+[[2-&gt;Retry Safe]]
+[[3-&gt;Retry Safe]]
+[[4-&gt;Retry Safe]]
+[[5-&gt;Safe Open]]
+[[6-&gt;Retry Safe]]
+[[7-&gt;Retry Safe]]
+[[8-&gt;Retry Safe]]
+[[9-&gt;Retry Safe]]</tw-passagedata><tw-passagedata pid="27" name="Safe Open" tags="" position="1200,2700" size="100,100">The safe lock clicks sweetly, and the handle turns. The door swings open on perfectly greased hinges. [[You gaze in awe upon the treasure held within-&gt;The End]].</tw-passagedata><tw-passagedata pid="28" name="The End" tags="" position="1200,2900" size="100,100">### The End
+
+&#39;&#39;Programming and Writing by&#39;&#39; Maximilian Hunt
+
+&#39;&#39;Concept and Game Design by&#39;&#39; Caspar
+
+&#39;&#39;Co-created and Executive Produced by&#39;&#39; Jethro Harrup and Alex Spencer</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
